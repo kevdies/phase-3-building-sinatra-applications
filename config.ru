@@ -1,3 +1,11 @@
-require relative "./config/environment"
+require 'sinatra'
 
-run ApplicationController
+class App < Sinatra::Base
+
+  get '/' do
+    'reload please!!!'
+  end
+
+end
+
+run App
